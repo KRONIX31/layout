@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap'); /* основа */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap'); /* пропись */
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    margin-bottom: 158px;
+    padding: 0 22px 0 22px;
+}
+.header_wrapper{
+    padding-top: 27px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header_list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.header_list_item{
+    margin-right: 34px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.header_list_item:last-child{
+    margin: 0;
+}
+.header_list_link{
+    color: black;
+}
+.header_list_link:hover, .header_list_link:focus, .header_list_link:active{
+    text-shadow: 1px 1px 4px rgb(112, 112, 124);
+    transition: 0.3s;
+}
+
+/*  */
+.intro::selection{
+    color: white;
+    background: black;
+}
+.intro{
+    margin-bottom: 71px;
+}
+.intro_wrapper{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+.intro_title_wrapper{
+    margin-bottom: 40px;
+}
+.intro_content{
+    padding-right: 110px;
+    flex: 1 1 auto;
+}
+.intro_title{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+}
+.intro_text{
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 23px;
+}
+.intro_btn_wrapper{
+    display: block;
+    width: 208px;
+    height: 47px;
+}
+.intro_btn{
+    display: block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    background: #FF6464;
+    color: white;
+    padding: 15px 20px;
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 19px;*/
+}
+.intro_btn:hover{
+    background: #b34747;
+    transition: .2s;
+}
+.intro_img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    box-shadow: -15px 10px 0px 0px #bec5c7;
+}
+
+
+/*  */
+
+
+.recent_posts{
+    background: #EDF7FA;
+    padding-bottom: 32px;
+}
+.recent_posts_wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+.recent_posts_header{
+    display: flex;
+}
+.recent_posts_title{
+    flex: 1 1 auto;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0px;
+}
+.recent_posts_viewall{
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0px;
+    padding-left: 15px;
+    color: #00A8CC;
+
+}
+.recent_posts_viewall:hover, .recent_posts_viewall:active, .recent_posts_viewall:focus{
+    color: #03758f;
+    transition: 0.2s;
+}
+.recent_posts_items{
+    display: flex;
+    margin: 0 -10px;
+}
+.recent_posts_column{
+    width: 50%;
+    padding: 0 10px;
+}
+.recent_post_item{
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+}
+.recent_post_title{
+    font-family: 'Heebo', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 22px;
+}
+.recent_post_info{
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+.recent_post_text{
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.recent_post_info span{
+    margin: 0 10px;
+}
+
+
+/*  */
+
+
+.featured_works_wrapper{
+    max-width: 1200px;
+    padding: 6px 18px 80px 18px;
+    margin: 0 auto;
+}
+.featured_works_title{
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+.works_item{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.works_item:last-child{
+    margin: 0;
+}
+.works_image:nth-child(1){
+    flex: 0 0 246px;
+    border-radius: 6px;
+    min-height: 180px;
+}
+.works_image:nth-child(2){
+    display: none;
+}
+.works_body{
+    flex: 1 1 auto;
+    padding: 0 0 0 18px;
+}
+.works_title{
+    color: #21243D;
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    line-height: 44px;
+    margin: 0 0 15px 0;
+}
+.works_info{
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+.works_year{
+    color: white;
+    background: #142850;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border-radius: 16px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 1000;
+    font-family: 'Heebo', sans-serif;
+    display: inline-flex;
+}
+.works_category{
+    color: #8695A4;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    padding-left: 26px;
+}
+.works_text{
+    color: #21243D;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+}
+/* мои приколы начались */
+
+.discord_logo{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 20;
+}
+.discord{
+    opacity: 0;
+    position: fixed;
+    bottom: 61px;
+    left: 100%;
+    transition: 0.3s ease-out;
+    z-index: 20;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 7px 0;
+}
+.form{
+    padding: 15px 10px 15px 10px;
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    background: #cbeffa;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.pricol_title{
+    text-align: center;
+    font-size: 18px;
+}
+.button_pricol{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 3px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+.button_pricol:hover{
+    color: rgb(235, 0, 0);
+    background: black;
+}
+.text_pricol{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    width: 150px;
+    border: 0;
+    color: royalblue;
+    text-indent: 4px;
+    transition: 0.1s;
+}
+.text_pricol::placeholder{
+    opacity: 0.5;
+}
+.text_pricol:focus::placeholder{
+    opacity: 0.1;
+    color: royalblue;
+    transition: 0.4s;
+}
+
+
+.kek_wrapper{
+    padding: 0 20px 20px 20px;
+}
+.items_container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.items_body{
+    display: grid;
+    gap: 30px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+}
+.item_video{
+    position: relative;
+    margin-bottom: 4px;
+    /* aspect-ratio: 16 / 9; */
+    padding-bottom: 56%;
+}
+.item_video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item_text{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+/* мои приколы кончились */
+
+
+.footer{
+    text-align: center;
+}
+.footer_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.social_item{
+    margin-right: 35px;
+}
+.social_item:last-child{
+    margin: 0;
+}
+.footer_copy{
+    color: #21243D;
+    font-size: 14px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    padding: 0 0 54px 0;
+}
+
+
+
+
+@media screen and (max-width: 830px){
+    .header{
+        margin-bottom: 100px;
+    }
+    .intro_wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .intro_title{
+        text-align: center;
+    }
+    .intro_text{
+        text-align: center;
+    }
+    .intro_content{
+        padding-right: 0px;
+    }
+    .intro_btn_wrapper{
+        margin: 0 auto;
+    }
+    .intro_img_wrapper{
+        margin-bottom: 40px;
+    }
+
+    /*  */
+
+    .recent_posts_viewall{
+        display: none;
+    }
+    .recent_posts_items{
+        flex-direction: column;
+    }
+    .recent_posts_column{
+        margin-bottom: 17px;
+    }
+    .recent_posts_header{
+        text-align: center;
+    }
+    .recent_posts_items{
+        align-items: center;
+        margin: 0;
+    }
+    .recent_posts_column{
+        width: 95%;
+    }
+    .recent_posts_wrapper{
+        padding: 0 5px 0 5px;
+    }
+}
+@media screen and (max-width: 530px){
+    .featured_works_title{
+        text-align: center;
+    }
+    .works_item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .works_image:nth-child(1){
+        display: none;
+    }
+    .works_image:nth-child(2){
+        display: block;
+        margin-bottom: 17px;
+    }
+    .works_item:nth-child(2),.works_item:nth-child(3){
+        display: none;
+    }
+    
+}
